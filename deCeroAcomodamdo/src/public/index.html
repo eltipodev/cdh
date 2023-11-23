@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guia</title>
+
+	<link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+	<header>
+		<nav>
+			<h1>Guia</h1>
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/api/products">Productos</a></li>
+				<li><a href="/api/carts/1">Cards</a></li>
+				<li><a class="main-list" href="/api/home/realtimeproducts">realtimeproducts</a>
+				</li>
+				<li><a href="/test_socket.html">Fetch</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="section-html-ct">
+
+			<ul>
+				<h2>Chat</h2>
+				<h3>endopoints up</h3>
+				<ol>
+					<li><span class="method-group method-chat">GET</span><a class="main-list main-list-method method-chat-link"
+							href="/api/mongo/chat/up">/api/mongo/chat/up</a>
+					</li>
+					<li><span class="method-group method-chat">GET</span><a class="main-list main-list-method method-chat-link"
+							href="/api/mongo/chat">/api/mongo/chat</a>
+					</li>
+				</ol>
+			</ul>
+			<ul>
+				<h2>Mongo + Handlebars</h2>
+				<h3>endopoints up</h3>
+				<ol>
+					<li><span class="method-group method-mongo">GET</span><a class="main-list main-list-method method-mongo-link"
+							href="/api/mongo/products/up">/api/mongo/products/up</a>
+					</li>
+					<li><span class="method-group method-mongo">GET</span><a class="main-list main-list-method method-mongo-link"
+							href="/api/mongo/carts/up">/api/mongo/carts/up</a>
+					</li>
+				</ol>
+				<h3>endopoints products</h3>
+				<ol>
+					<li><span class="method-group method-mongo">GET</span><a class="main-list main-list-method method-mongo-link"
+							href="/api/mongo/products">/api/mongo/products</a>
+					</li>
+					<li><span class="method-group method-mongo">GET</span><a class="main-list main-list-method method-mongo-link"
+							href="/api/mongo/products/65367cfded9b9b9eaebcb65c">/api/mongo/products/65367cfded9b9b9eaebcb65c</a>
+					</li>
+					<li><span class="method-group method-mongo">GET</span><a class="main-list main-list-method method-mongo-link"
+							href="/api/mongo/products/?limit=2">/api/mongo/products/?limit=2</a>
+					</li>
+					<li><span class="method-group method-mongo">POST</span><span
+							class="main-list main-list-method method-mongo-link--light">/api/mongo/products</span>
+					</li>
+					<li><span class="method-group method-mongo">PUT</span><span
+							class="main-list main-list-method method-mongo-link--light">/api/mongo/products/:pid</span>
+					</li>
+					<li><span class="method-group method-mongo">DELETE</span><span
+							class="main-list main-list-method method-mongo-link--light">/api/mongo/products/:pid</span>
+					</li>
+				</ol>
+				<h3>endopoints carts</h3>
+				<ol>
+					<li><span class="method-group method-mongo">GET</span><a class="main-list main-list-method method-mongo-link"
+							href="/api/mongo/carts">/api/mongo/carts</a>
+					</li>
+					<li><span class="method-group method-mongo">GET</span><a class="main-list main-list-method method-mongo-link"
+							href="/api/mongo/carts/65380ca2c3cfa0d79f0b38e9">/api/mongo/carts/65380ca2c3cfa0d79f0b38e9</a>
+					</li>
+					<li><span class="method-group method-mongo">POST</span><span
+							class="main-list main-list-method method-mongo-link--light">/api/mongo/carts</span>
+					</li>
+					<li><span class="method-group method-mongo">POST</span><span
+							class="main-list main-list-method method-mongo-link--light">/api/mongo/carts/1/product/1</span>
+					</li>
+				</ol>
+			</ul>
+			<ul>
+				<h2>Handlebars</h2>
+				<h3>endopoints up</h3>
+				<ol>
+					<li><span class="method-group method-hds">GET</span><a class="main-list main-list-method method-hds-link"
+							href="/api/up">/api/up</a>
+					</li>
+				</ol>
+				<ol>
+					<li><span class="method-group method-hds">GET</span><a class="main-list main-list-method method-hds-link"
+							href="/api/home/up">/api/home/up</a>
+					</li>
+				</ol>
+				<h3>endopoints realtimeproducts</h3>
+				<ol>
+					<li>
+						<span class="method-group method-hds">GET</span><a class="main-list main-list-method  method-hds-link"
+							href="/api/home">/api/home</a>
+					</li>
+					<li>
+						<span class="method-group method-hds">GET</span><a class="main-list main-list-method  method-hds-link"
+							href="/api/home/realtimeproducts">/api/home/realtimeproducts</a>
+					</li>
+				</ol>
+				<h3>endopoints products</h3>
+				<ol>
+					<li>
+						<span class="method-group method-hds">GET</span><a class="main-list main-list-method  method-hds-link"
+							href="/api/products">/api/products</a>
+					</li>
+					<li>
+						<span class="method-group method-hds">GET</span><a class="main-list main-list-method  method-hds-link"
+							href="/api/products/1">/api/products/1</a>
+					</li>
+				</ol>
+				<h3>endopoints carts</h3>
+				<ol>
+					<li>
+						<span class="method-group method-hds">GET</span><a class="main-list main-list-method method-hds-link"
+							href="/api/carts">/api/carts</a>
+					</li>
+					<li><span class="method-group method-hds">GET</span><a class="main-list main-list-method method-hds-link"
+							href="/api/carts/1">/api/carts/1</a>
+					</li>
+				</ol>
+			</ul>
+			<ul>
+				<h2>Filesystem</h2>
+				<h3>endopoints up</h3>
+				<ol>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/products/up">/api/json/up</a>
+					</li>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/products/up">/api/json/products/up</a>
+					</li>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/carts/up">/api/json/carts/up</a>
+					</li>
+				</ol>
+				<h3>endopoints products</h3>
+				<ol>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/products">/api/json/products</a>
+					</li>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/products/1">/api/json/products/1</a>
+					</li>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/products/?limit=2">/api/json/products/?limit=2</a>
+					</li>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/products/?limit=2">/api/json/products/?limit=2</a>
+					</li>
+					<li><span class="method-group method-json">POST</span><span
+							class="main-list main-list-method method-json-link--light">/api/json/products</span>
+					</li>
+					<li><span class="method-group method-json">PUT</span><span
+							class="main-list main-list-method method-json-link--light">/api/json/products/:pid</span>
+					</li>
+					<li><span class="method-group method-json">DELETE</span><span
+							class="main-list main-list-method method-json-link--light">/api/json/products/:pid</span>
+					</li>
+				</ol>
+				<h3>endopoints carts</h3>
+				<ol>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/carts">/api/json/carts</a>
+					</li>
+					<li><span class="method-group method-json">GET</span><a class="main-list main-list-method method-json-link"
+							href="/api/json/carts/1">/api/json/carts/1</a>
+					</li>
+					<li><span class="method-group method-json">POST</span><span
+							class="main-list main-list-method method-json-link--light">/api/json/carts</span>
+					</li>
+					<li><span class="method-group method-json">POST</span><span
+							class="main-list main-list-method method-json-link--light">/api/json/carts/1/product/1</span>
+					</li>
+				</ol>
+			</ul>
+		</section>
+	</main>
+
+	<script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+		integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+		crossorigin="anonymous"></script>
+	<script src="/js/index.js"></script>
+</body>
+
+</html>

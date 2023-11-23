@@ -1,0 +1,117 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+@font-face {
+	font-family: RubikMonoOne;
+	src:
+		local("Virgil 3 YOFF"),
+		url("/fonts/RubikMonoOne-Regular.woff2") format("woff2"),
+		url("/fonts/RubikMonoOne-Regular.woff") format("woff"),
+		url("/fonts/RubikMonoOne-Regular.ttf") format("truetype");
+	unicode-range: u+000-u+0ff;
+}
+
+@font-face {
+	font-family: TitanOne-Regular;
+	src:
+		local(""),
+		url("/fonts/TitanOne-Regular.woff2") format("woff2"),
+		url("/fonts/TitanOne-Regular.woff") format("woff"),
+		url("/fonts/TitanOne-Regular.ttf") format("truetype");
+	unicode-range: u+000-u+0ff;
+}
+
+body{
+	background-color: #272727;
+	color: hsl(0deg 0% 62%);
+	font-family: TitanOne-Regular, Courier, monospace;
+	margin: 0 auto;
+}
+
+
+@font-face {
+	font-family: RubikMonoOne;
+	src:
+		local("Virgil 3 YOFF"),
+		url("/fonts/RubikMonoOne-Regular.woff2") format("woff2"),
+		url("/fonts/RubikMonoOne-Regular.woff") format("woff"),
+		url("/fonts/RubikMonoOne-Regular.ttf") format("truetype");
+	unicode-range: u+000-u+0ff;
+}
+
+@font-face {
+	font-family: TitanOne-Regular;
+	src:
+		local(""),
+		url("/fonts/TitanOne-Regular.woff2") format("woff2"),
+		url("/fonts/TitanOne-Regular.woff") format("woff"),
+		url("/fonts/TitanOne-Regular.ttf") format("truetype");
+	unicode-range: u+000-u+0ff;
+}
+
+
+
+
+nav {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 12px 0;
+	text-align: center;
+}
+
+
+main{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header{
+	align-items: center;display: flex;;
+	flex-direction: column;
+	justify-content: center;}
+
+
+
+h1{
+	color: white;
+	font-family: RubikMonoOne, Courier, monospace;
+	font-size: 56px!important;
+	font-weight: 0;
+	margin: 12px;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	font-family: TitanOne-Regular, Courier, monospace;
+	font-size: 36px!important;
+	font-weight: 0;
+	text-align: center;
+}
+
+header nav ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+a {
+	color: antiquewhite;
+	text-decoration: none;
+}
+
+h1 + ul >li > a {
+	display: inline-block;
+}
+
+.ppp{
+	margin: 22px!important
+}
+
+.message-error{
+	font-size: 16px;
+}

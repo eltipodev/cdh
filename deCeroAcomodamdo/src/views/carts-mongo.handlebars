@@ -1,0 +1,37 @@
+<section>
+	{{#if success}}
+	{{#each value}}
+	<div class="carts-ctn">
+		<div class="carts-main">
+			<div class="carts-main-main">
+				<div class="carts-id carts-id-mongo">{{_id}}</div>
+				{{#if value.products.lenght}}
+				<img src="{{thumbnails}}" alt="imagen de una {{title}}" class="carts-main-img">
+			</div>
+			<div class="carts-header">
+				<div class="carts-header-title">
+					{{this.title}} <!-- Acceder a la propiedad title del objeto actual en products -->
+				</div>
+
+				<div class="carts-main-description">
+					{{this.description}}
+				</div>
+				<div class="carts-footer-price">
+					<p>Precio: {{this.price}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="carts-footer-credits">
+			<span>Foto de </span><a
+				href="https://unsplash.com/es/@{{this.attbName.urlAttb}}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">{{this.attbName.name}}</a>
+			<span>en</span><a
+				href="https://unsplash.com/es/fotos/{{this.attbName.codeAttb}}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+				Unsplash</a>
+			{{/if}}
+		</div>
+	</div>
+	{{/each}}
+	{{else}}
+	<div class="products-header">No hay productos</div>
+	{{/if}}
+</section>

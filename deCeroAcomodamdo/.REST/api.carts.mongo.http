@@ -1,0 +1,25 @@
+// []
+### GET endpoints carts carts sin metodos
+GET  http://localhost:8080/api/mongo/carts/up
+
+// [x]
+### GET listar Todos Los  carritos
+GET  http://localhost:8080/api/mongo/carts
+
+// []
+### GET listar carritos por id
+GET  http://localhost:8080/api/mongo/carts/653485303aa718c6dfe0367f
+
+// [x]
+### POST agrega carritos
+POST http://localhost:8080/api/mongo/carts
+# Content-Type: application/json
+
+// []
+### POST agrega producto a un carrito
+POST http://localhost:8080/api/mongo/carts/65380ca2c3cfa0d79f0b38e9/product/6536765367d3aed9b9b9eaebcb663
+# Content-Type: application/json
+
+
+
+

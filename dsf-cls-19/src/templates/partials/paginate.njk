@@ -1,0 +1,21 @@
+{{!-- <div class="paginate-ctn">
+	<div class="button-pag-prev button-pag--add"></div>
+	<div class="button-pag-now">1</div>
+	<div class="button-pag-next button-pag--add"></div>
+</div> --}}
+
+
+<div class="paginate-ctn">
+	<div class="button-pag-prev button-pag--remove"></div>
+	<ul>
+		{{#each pagination}}
+		{{#if (eq payload.page pagination)}}
+		<li class="button-pag-now" numberPage="{{this}}">{{this}}</li>
+		{{else}}
+		<li class="paginate-item" numberPage="{{this}}">{{this}}</li>
+		{{/if}}
+		{{/each}}
+
+	</ul>
+	<div class="button-pag-next button-pag--add"></div>
+</div>

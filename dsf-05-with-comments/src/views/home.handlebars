@@ -1,0 +1,35 @@
+<section>
+	{{#if products.[0]}}
+	{{#each products}}
+	<div class="products-ctn">
+
+		<div class="products-main">
+			<img src="{{thumbnails}}" alt="imagen de una {{title}}" class="products-main-img">
+			<div class="products-footer-credits">
+				<span>Foto de </span><a
+					href="https://unsplash.com/es/@{{attbName.urlAttb}}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">{{
+					attbName.name}}</a>
+				<span>en</span><a
+					href="https://unsplash.com/es/fotos/{{attbName.codeAttb}}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+			</div>
+			<div class="products-header">
+				<div class="products-header-title">
+					{{title}}
+				</div>
+			</div>
+			<div class="products-main-description">
+				{{description}}
+			</div>
+		</div>
+		<div class="products-footer">
+			<div class="products-footer-price">
+				{{price}}
+			</div>
+
+		</div>
+	</div>
+	{{/each}}
+	{{else}}
+	<div class="products-header">No hay productos</div>
+	{{/if}}
+</section>

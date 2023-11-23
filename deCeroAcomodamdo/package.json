@@ -1,0 +1,31 @@
+{
+	"name": "dsf-03",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Servidor basado en Express donde podamos hacer consultas a nuestro archivo de productos.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server.js",
+		"start:dev": "nodemon server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"dotenv": "^16.3.1",
+		"eslint": "^8.49.0",
+		"eslint-config-standard": "^17.1.0",
+		"eslint-plugin-react": "^7.33.2",
+		"postcss-nesting": "^12.0.1",
+		"postcss-syntax": "^0.36.2",
+		"stylelint": "^15.10.3",
+		"stylelint-config-standard": "^34.0.0",
+		"stylelint-order": "^6.0.3"
+	},
+	"dependencies": {
+		"express": "^4.18.2",
+		"express-handlebars": "^7.1.2",
+		"mongoose": "^7.6.2",
+		"socket.io": "^4.7.2"
+	}
+}

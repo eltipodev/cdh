@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guia</title>
+
+	<link rel="stylesheet" href="/css/index.css">
+
+</head>
+
+<body>
+	<header>
+		<nav>
+			<h1>Guia</h1>
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/api/handlebars/products">Productos</a></li>
+				<li><a href="/api/handlebars/carts/1">Cards</a></li>
+				<li><a class="main-list" href="http://localhost:8080/api/handlebars/home/realtimeproducts">realtimeproducts</a>
+				</li>
+				<li><a href="/test_socket.html">Fetch</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="section-html-ct">
+			<h2>EndPoints con Handlebars</h2>
+			<ul>
+				<h3>home</h3>
+				<ol>
+					<li>
+						<a class="main-list main-list-underlined"
+							href="http://localhost:8080/api/handlebars/home/up">api/handlebars/home/up</a>
+					</li>
+					<li>
+						<a class="main-list"
+							href="http://localhost:8080/api/handlebars/home/realtimeproducts">api/handlebars/home/realtimeproducts</a>
+					</li>
+					<li>
+						<a class="main-list main-list-underlined"
+							href="http://localhost:8080/api/handlebars/home/input">api/handlebars/home/input</a>
+					</li>
+				</ol>
+
+				<h3>carts</h3>
+				<ol>
+					<li>
+						<a class="main-list main-list-underlined"
+							href="http://localhost:8080/api/handlebars/carts/up">api/handlebars/carts/up</a>
+					</li>
+					<li>
+						<a class="main-list " href="http://localhost:8080/api/handlebars/carts/1">api/handlebars/carts/1</a>
+					</li>
+				</ol>
+
+				<h3>products</h3>
+				<ol>
+					<li>
+						<a class="main-list main-list-underlined"
+							href="http://localhost:8080/api/handlebars/products/up">api/handlebars/products/up</a>
+					</li>
+					<li>
+						<a class="main-list " href="http://localhost:8080/api/handlebars/products">api/handlebars/products</a>
+					</li>
+				</ol>
+
+			</ul>
+			<h2>Test Html con Fetch</h2>
+			<h3>Agregar Productos</h3>
+			<ul>
+				<ol>
+					<li>
+						<a class="main-list" href="http://localhost:8080/test_socket.html">test_socket.html</a>
+					</li>
+				</ol>
+			</ul>
+		</section>
+	</main>
+	<script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+	<script src="/js/index.js"></script>
+</body>
+
+</html>

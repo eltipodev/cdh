@@ -1,0 +1,52 @@
+// [x]
+### GET endpoints api sin metodos
+GET  http://localhost:8080/api/json/products/up
+
+
+// [x]
+### GET endpoints listar todos los productos
+GET  http://localhost:8080/api/json/products
+
+//////////////////////////////////////////////////
+
+
+// [x]
+### GET listar productos por ID
+GET  http://localhost:8080/api/json/products/1
+
+
+// [x]
+### GET listar cantidad de productos
+GET  http://localhost:8080/api/json/products?limit=1
+
+
+// [x]
+### POST agrega productos
+POST http://localhost:8080/api/json/products
+Content-Type: application/json
+
+{
+"title": "Kiwi",
+		"description":"s",
+		"code": "F3589",
+		"price":1.99,
+		"thumbnails": "imagen_kiwi.jpg",
+		"category": "Frutas",
+		"stock": 55
+	}
+
+// [x]
+### PUT actualiza los productos
+PUT http://localhost:8080/api/json/products/19
+Content-Type: application/json
+
+{
+"title": "ahora1",
+"description": "Este es un producto ACTUALIZADO"
+}
+
+// [x]
+### DELETE Elimima el producto
+DELETE  http://localhost:8080/api/json/products/19
+
+

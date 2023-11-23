@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Manzana",
+    "description": "Manzana fresca y jugosa.",
+    "code": "A123",
+    "price": 1.99,
+    "status": true,
+    "thumbnails": "/img/imagen_manzana.jpg",
+    "category": "Frutas",
+    "stock": 100,
+    "id": 1,
+    "attbName": {
+      "name": "Louis Hansel",
+      "codeAttb": "MardkT836BU",
+      "urlAttb": "louishansel"
+    }
+  },
+  {
+    "title": "Plátano",
+    "description": "Plátano maduro y delicioso.",
+    "code": "B456",
+    "price": 0.99,
+    "status": true,
+    "thumbnails": "/img/imagen_platano.jpg",
+    "category": "Frutas",
+    "stock": 50,
+    "id": 2,
+    "attbName": {
+      "name": "Mockup Graphics",
+      "codeAttb": "MardkT836BU",
+      "urlAttb": "mockupgraphics"
+    }
+  },
+  {
+    "title": "Naranja",
+    "description": "Naranja fresca y llena de vitamina C.",
+    "code": "C789",
+    "price": 1.49,
+    "status": true,
+    "thumbnails": "/img/imagen_naranja.jpg",
+    "category": "Frutas",
+    "stock": 75,
+    "id": 7,
+    "attbName": {
+      "name": "Mae Mu",
+      "codeAttb": "U1iYwZ8Dx7k",
+      "urlAttb": "picoftasty"
+    }
+  },
+  {
+    "title": "Pera",
+    "description": "Pera jugosa y refrescante.",
+    "code": "D123",
+    "price": 1.79,
+    "status": true,
+    "thumbnails": "/img/imagen_pera.jpg",
+    "category": "Frutas",
+    "stock": 60,
+    "id": 8,
+    "attbName": {
+      "name": "Mockup Graphics",
+      "codeAttb": "MardkT836BU",
+      "urlAttb": "mockupgraphics"
+    }
+  },
+  {
+    "title": "Frutilla",
+    "description": "Frutilla fresca y deliciosa.",
+    "code": "F123",
+    "price": 2.99,
+    "status": true,
+    "thumbnails": "/img/imagen_frutilla.jpg",
+    "category": "Frutas",
+    "stock": 50,
+    "id": 18,
+    "attbName": {
+      "name": "Allec Gomes",
+      "codeAttb": "xnRg3xDcNnE",
+      "urlAttb": "allecgomes"
+    }
+  },
+  {
+    "title": "Cereza",
+    "description": "Cerezas jugosas y dulces.",
+    "code": "C456",
+    "price": 3.99,
+    "status": true,
+    "thumbnails": "/img/imagen_cereza.jpg",
+    "category": "Frutas",
+    "stock": 40,
+    "id": 9,
+    "attbName": {
+      "name": "Mae Mu",
+      "codeAttb": "U1iYwZ8Dx7k",
+      "urlAttb": "picoftasty"
+    }
+  }
+]

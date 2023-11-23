@@ -1,0 +1,39 @@
+<div class="form-user-signup-ctn">
+	<div class="form-user-signup">
+
+		{{#if (eq pageTitle "Signup")}}
+		<form class="form-user-signup--ctn" method="post" action="/api/user/signup">
+			<h1 class="page-title form-user-title">{{pageTitle}}</h1>
+			<label class="form-user-label" for="firstName">Nombre: </label>
+			<input type="text" name="firstName" id="firstName">
+			<label class="form-user-label" for="lastName">Apellido: </label>
+			<input type="text" name="lastName" id="lastName">
+			<label class="form-user-label" for="nameUser">Usuario: </label>
+			<input type="text" name="user" id="nameUser">
+			<label class="form-user-label" for="email">email: </label>
+			<input type="text" name="email" id="email">
+			{{else}}
+			<form class="form-user-signup--ctn" method="post" action="/api/user/login">
+				<h1 class="page-title form-user-title">{{pageTitle}}</h1>
+				<label class="form-user-label" for="user">🙍‍♂️ Usuario: </label>
+				<input type="text" name="user" id="user">
+				{{/if}}
+				<label class="form-user-label" for="password">🔑 Password: </label>
+				<input type="password" name="password" id="password">
+				{{#if (eq status "error")}}
+				<p class="message-sucess-error message-format">{{message}}</p>
+				{{else}}
+				<p class="message-sucess-ok message-format">{{message}}</p>
+				{{/if}}
+				{{#if (eq pageTitle "Signup")}}
+				<a class="form-user-signup-link" href="/api/user/login">🙍‍♂️ Login</a>
+				{{else}}
+				<a class="form-user-signup-link" href="/api/user/signup">✍ Signup</a>
+				{{/if}}
+				<input class="form-user-button" type="submit" value="Submit">
+			</form>
+
+			<button class="form-user-button--github" onclick="location.href='/api/auth/github'">GitHub</button>
+
+	</div>
+</div>

@@ -1,0 +1,22 @@
+{{#if pageTitle}}
+{{#if (eq pageTitle "Productos")}}
+<div class="paginate-ctn">
+	{{this.totalDocs}}
+
+	{{#if (eq prevPage false)}}
+	<span class="paginate-item paginate-item--null">-</span>
+	{{else}}
+	<a class="paginate-item" href="{{prevPage}}">-</a>
+	{{/if}}
+
+	{{!-- {{#each pagination}} --}}
+	<a class="paginate-item paginate-item--now">{{page}}</a>
+	{{!-- {{/each}} --}}
+	{{#if (eq nextPage false)}}
+	<span class="paginate-item paginate-item--null">+</span>
+	{{else}}
+	<a class="paginate-item" href="{{nextPage}}">+</a>
+	{{/if}}
+</div>
+{{/if}}
+{{/if}}

@@ -1,0 +1,65 @@
+{{!-- <header class="site-header">
+	<div class="site-header-ctn">
+		<nav class="site-nav">
+			<ul>
+				<li><a href="/api/vista/products">Home</a></li>
+				<li><a href="/api/vista/products">Productos</a></li>
+				<li><a href="/api/vista/carts/65426c5d4b5face80e96732a">Carrito</a></li>
+				<li><a href="/api/vista/carts">Carritos</a></li>
+			</ul>
+		</nav>
+		<div class="user-ctn ">
+			{{#if (eq user.rol "admin")}}
+			<span class="profile-user-rol">Admin</span>
+			{{else}}
+			<span class="profile-user-rol">User</span>
+			{{/if}}
+			{{# if user}}
+			<a class="profile-user-logout" href="/api/user/logout">Logout</a>
+			<a class="user" href="/api/user/profile">{{user.user}}</a>
+			{{else}}
+			<a class="login" href="/api/user/login">Login</a>
+			<a class="signup" href="/api/user/signup">Signup</a>
+			{{/if}}
+
+			<a href="/api/user/profile"> <img class="user-img" alt=""></a>
+		</div>
+	</div>
+
+
+</header> --}}
+
+<header class="site-header">
+	<div class="ctn site-header__ctn">
+		<div class="site-header__seccion">
+			<h1 class="page-title">{{pageTitle}}</h1>
+			<h2 class="page-subtitle">Bienvenido {{user.user}}</h2>
+		</div>
+		<nav class="site-nav__ctn">
+			<ul>
+				<li><a href="/api/vista/products">Home</a></li>
+				<li><a href="/api/vista/products">Productos</a></li>
+				<li><a href="/api/vista/carts/65426c5d4b5face80e96732a">Carrito</a></li>
+				<li><a href="/api/vista/carts">Carritos</a></li>
+			</ul>
+
+		</nav>
+		<div class="user-ctn ">
+			{{#if (eq user.rol "admin")}}
+			<span class="profile-user-rol">Admin</span>
+			{{else}}
+			<span class="profile-user-rol">User</span>
+			{{/if}}
+			{{# if user}}
+			<a class="profile-user-logout" href="/api/user/logout">Logout</a>
+			<a class="user" href="/api/user/profile">{{user.user}}</a>
+			{{else}}
+			<a class="login" href="/api/user/login">Login</a>
+			<a class="signup" href="/api/user/signup">Signup</a>
+			{{/if}}
+
+			<a href="/api/user/profile"> <img class="user-img" alt=""></a>
+		</div>
+
+	</div>
+</header>

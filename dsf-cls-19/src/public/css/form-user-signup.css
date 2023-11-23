@@ -1,0 +1,61 @@
+.form-user-signup-ctn{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+
+}
+
+.form-user-signup-ctn h1 {
+	color: rgb(241 241 241);
+	padding: 0;
+}
+
+.form-user-signup{
+	background: linear-gradient(45deg, rgb(41 18 160),hsl(262deg 75% 40%),hsl(301deg 47% 49%),rgb(93 0 255),rgb(162 122 231));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 55px;
+
+}
+
+.form-user-button{
+	background-color: rgb(15 138 246);
+	color: white;
+	font-weight: 600;
+	margin-top: 12px;
+}
+
+.form-user-title{
+	background-color: rgb(20 12 174);
+	color: rgb(255 255 255);
+	font-weight: 600;}
+
+.form-user-label{
+	background-color: rgb(20 12 174);
+	color: rgb(255 255 255);
+	font-weight: 600;
+	margin: 12px 0;
+	padding: 4px;
+}
+
+.form-user-signup-link{
+	color: rgb(221 221 221);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.form-user-button--github{
+	background-color: hsl(271deg 74% 55%);
+	color: #fff;
+}
+
+.form-user-signup--ctn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+
+}

@@ -1,0 +1,38 @@
+### GET todos los productos
+GET  http://localhost:8080/api/productos
+
+
+### GET listar cantidad de productos
+GET  http://localhost:8080/api/productos?limit=1
+
+
+### POST agrega productos
+POST http://localhost:8080/api/productos
+Content-Type: application/json
+
+{
+		"title": "Kiwi",
+		"description": "Kiwi exótico y lleno de sabor.",
+		"code": "F789",
+		"price":1.99,
+		"status": true,
+		"thumbnails": "imagen_kiwi.jpg",
+		"category": "Frutas",
+		"stock": 55
+	}
+
+
+### PUT actualiza los productos
+PUT http://localhost:8080/api/productos/5
+Content-Type: application/json
+
+{
+"title": "ahora1",
+"description": "Este es un producto ACTUALIZADO"
+}
+
+
+### DELETE Elimima el producto
+DELETE  http://localhost:8080/api/productos/1
+
+

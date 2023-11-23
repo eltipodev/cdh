@@ -1,0 +1,42 @@
+### GET todos los productos
+GET  http://localhost:8080/api/handlebars/test
+
+### GET listar productos por ID
+GET  http://localhost:8080/api/handlebars/test/1
+
+
+
+### GET listar cantidad de productos
+GET  http://localhost:8080/api/handlebars/test?limit=1
+
+
+
+### POST agrega productos
+POST http://localhost:8080/api/handlebars/test
+Content-Type: application/json
+
+{
+"title": "Kiwi",
+		"description":"s",
+		"code": "F1589",
+		"price":1.99,
+		"thumbnails": "imagen_kiwi.jpg",
+		"category": "Frutas",
+		"stock": 55
+	}
+
+
+### PUT actualiza los productos
+PUT http://localhost:8080/api/handlebars/test/9
+Content-Type: application/json
+
+{
+"title": "ahora1",
+"description": "Este es un producto ACTUALIZADO"
+}
+
+
+### DELETE Elimima el producto
+DELETE  http://localhost:8080/api/handlebars/test/9
+
+

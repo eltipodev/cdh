@@ -1,0 +1,45 @@
+<section class="section-products">
+	{{#if sucess }}
+	{{#each payload.docs}}
+	<div class="products-ctn">
+		<div class="products-main">
+			<img class="button-actions delete" prodId="{{_id}}" src="/img/empty-wood-bucket-svgrepo-com.svg" alt="">
+			<img class="button-actions add" prodId="{{_id}}" src="/img/plus-sign-in-a-circle-svgrepo-com.svg" alt="">
+			<div>
+				{{#if thumbnails}}
+
+				<img src="{{thumbnails}}" alt="imagen de una {{title}}" class="products-main-img">
+				<div class="products-footer-credits">
+					<span>Foto generada con IA</span>
+				</div>
+				{{else}}
+				<img src="/img/imagen_vacio.png" alt="imagen de una {{title}}" class="products-main-img">
+				{{/if}}
+			</div>
+			<div class="products-header">
+				<div class="products-header-title">
+					{{title}}<span class="products-stock">({{stock}})</span>
+				</div>
+			</div>
+			{{#if (eq pageTitle "Producto")}}
+			<div class="products-main-description-ctn">
+				<span class="products-main-description"> {{description}}</span>
+			</div>
+			{{/if}}
+		</div>
+		<div class="products-footer">
+			<div class="products-footer-price">
+				{{price}}
+			</div>
+			<span class="products-footer-vermas">
+				<a href="/api/vista/products/{{_id}}">ver mas</a>
+			</span>
+			<span class="product-id-single carts-id-single-text">{{_id}}</span>
+		</div>
+	</div>
+	{{/each}}
+	{{else}}
+	<div class="products-header">No hay productos</div>
+	{{/if}}
+	{{!-- <p class="message-sucess"></p> --}}
+</section>

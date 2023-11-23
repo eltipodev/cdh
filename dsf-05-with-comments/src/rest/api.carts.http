@@ -1,0 +1,35 @@
+# ### GET todos los productos
+# GET  http://localhost:8080/api/carts
+
+
+# ### GET listar carritos por id
+GET  http://localhost:8080/api/carts/1
+
+### POST agrega carritos
+POST http://localhost:8080/api/carts
+# Content-Type: application/json
+
+
+### POST agrega producto a un carrito
+POST http://localhost:8080/api/carts/1/product/1
+# Content-Type: application/json
+
+
+
+
+
+
+# ### PUT actualiza los productos
+# PUT http://localhost:8080/api/carts/2
+# Content-Type: application/json
+
+# {
+# "title": "ahora12",
+# "description": "Este es un producto ACTUALIZADO"
+# }
+
+
+# ### DELETE Elimima el producto
+# DELETE  http://localhost:8080/api/carts/3
+
+

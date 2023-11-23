@@ -1,0 +1,24 @@
+<section class="carts-section-views">
+	{{#if success}}
+	{{#each value}}
+	<div class="carts-ctn">
+
+		<div class="carts-main">
+			<div class="carts-main-main">
+				<div class="carts-id">{{id}}</div>
+				{{#each products}}
+				<div class="img-cart-ctn">
+					<img src="{{thumbnails}}" alt="imagen de una {{title}}" class="carts-main-img">
+					<p class="product-quantify">{{quantity}}</p>
+				</div>
+				{{/each}}
+			</div>
+			<div class="carts-header">
+			</div>
+		</div>
+	</div>
+	{{/each}}
+	{{else}}
+	<div class="products-header">No hay productos</div>
+	{{/if}}
+</section>

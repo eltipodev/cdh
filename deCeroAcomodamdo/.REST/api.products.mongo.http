@@ -1,0 +1,60 @@
+
+// [x]
+##// # GET endpoints api sin metodos
+GET  http://localhost:8080/api/mongo/products/up
+
+
+// [x]
+###// # GET endpoints listar todos los productos
+GET  http://localhost:8080/api/mongo/products
+
+//////////////////////////////////////////////////
+
+
+// []
+###// # GET listar productos por ID
+GET  http://localhost:8080/api/mongo/products/65318ff01f9fe185687fbb14
+
+
+// []
+###// # GET listar cantidad de productos
+GET  http://localhost:8080/api/mongo/products?limit=1
+
+
+// []
+###// # POST agrega productos
+POST http://localhost:8080/api/mongo/products
+Content-Type: application/json
+
+{
+		"title": "Manzanaa",
+		"description": "Manzana fresca y jugosa.",
+		"code": "A123",
+		"price": 1.99,
+		"status": true,
+		"thumbnails": "/img/imagen_manzana.jpg",
+		"category": "Frutas",
+		"stock": 100,
+		"attbName": {
+			"name": "Louis Hansel",
+			"codeAttb": "MardkT836BU",
+			"urlAttb": "louishansel"
+		}
+	}
+
+
+// []
+###// # PUT actualiza los productos
+PUT http://localhost:8080/api/mongo/products/6531bf11ae49fbfa93a73ab5
+Content-Type: application/json
+
+{
+"title": "Platano",
+ "code": "A1323"
+}
+
+// []
+### DELETE Elimima el producto
+DELETE  http://localhost:8080/api/mongo/products/6532feaf894d966d02f48638
+
+

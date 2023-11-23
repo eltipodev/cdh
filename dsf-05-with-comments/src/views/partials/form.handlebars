@@ -1,0 +1,32 @@
+<section class="section-form-ctn">
+	{{#if form}}
+	<form action="{{form}}" method="post" id="form">
+		{{else}}
+		<form action="" method="post" id="form">
+			{{/if}}
+			<p class="message-sucess"></p>
+			<div>
+				<div class="form-colum-left-ctn">
+					<label for="title">Título</label>
+					<input type="text" name="title" id="title">
+					<label for="description">Descripción</label>
+					<input type="text" name="description" id="description">
+					<label for="code">Código</label>
+					<input type="number" name="code" id="code">
+				</div>
+				<div class="form-colum-left-ctn">
+					<label for="price">Precio</label>
+					<input type="number" name="price" id="price">
+					<label for="category">Categoría</label>
+					<input type="text" name="category" id="category">
+					<label for="thumbnails">Miniaturas</label>
+					<input type="text" name="thumbnails" id="thumbnails">
+				</div>
+			</div>
+			<label for="stock">Stock</label>
+
+			<input type="number" name="stock" id="stock">
+			<input class="button-form" type="submit" value="Enter" id="">
+		</form>
+
+</section>

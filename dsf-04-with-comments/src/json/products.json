@@ -1,0 +1,57 @@
+[
+	{
+		"title": "Manzana",
+		"description": "Manzana fresca y jugosa.",
+		"code": "A123",
+		"price": 1.99,
+		"status": true,
+		"thumbnails": "imagen_manzana.jpg",
+		"category": "Frutas",
+		"stock": 100,
+		"id": 1
+	},
+	{
+		"title": "Plátano",
+		"description": "Plátano maduro y delicioso.",
+		"code": "B456",
+		"price": 0.99,
+		"status": true,
+		"thumbnails": "imagen_platano.jpg",
+		"category": "Frutas",
+		"stock": 50,
+		"id": 2
+	},
+	{
+		"title": "Naranja",
+		"description": "Naranja fresca y llena de vitamina C.",
+		"code": "C789",
+		"price": 1.49,
+		"status": true,
+		"thumbnails": "imagen_naranja.jpg",
+		"category": "Frutas",
+		"stock": 75,
+		"id": 7
+	},
+	{
+		"title": "Pera",
+		"description": "Pera jugosa y refrescante.",
+		"code": "D123",
+		"price": 1.79,
+		"status": true,
+		"thumbnails": "imagen_pera.jpg",
+		"category": "Frutas",
+		"stock": 60,
+		"id": 8
+	},
+	{
+		"title": "Uva",
+		"description": "Uva dulce y sabrosa.",
+		"code": "E456",
+		"price": 2.49,
+		"status": true,
+		"thumbnails": "imagen_uva.jpg",
+		"category": "Frutas",
+		"stock": 40,
+		"id": 9
+	}
+]

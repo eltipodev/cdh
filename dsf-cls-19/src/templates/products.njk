@@ -1,0 +1,15 @@
+<div class="container">
+
+	{{#if (eq pageTitle "Producto")}}
+	{{>card-product}}
+	{{/if}}
+	{{#if (eq pageTitle "Productos")}}
+	{{>card-products}}
+	{{/if}}
+	{{#if (eq pageTitle "Signup")}}
+	{{>form-user-signup}}
+	{{/if}}
+	{{#if (eq pageTitle "Login")}}
+	{{>form-user-signup}}
+	{{/if}}
+</div>

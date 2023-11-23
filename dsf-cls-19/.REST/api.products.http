@@ -1,0 +1,57 @@
+// [x]
+### GET Listar todos los productos
+GET  http://localhost:8080/api/products
+
+
+// [x]
+### GET Listar producto por ID
+GET  http://localhost:8080/api/products/65367cfded9b9b9eaebcb65c
+
+// [x]
+### GET Seleccionarlimite
+GET  http://localhost:8080/api/products?limit=3
+
+
+// [x]
+### GET Seleccionar ordenar
+GET  http://localhost:8080/api/products?sort=ascd
+
+// [x]
+### GET Seleccionar page
+GET  http://localhost:8080/api/products?page=2
+
+
+// [x]
+### GET Seleccionar limit,sort(ascd,desc,page
+GET http://localhost:8080/api/products?limit=3&page=2&sort=desc
+
+// [x]
+### POST agrega productos
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+		"title": "Sandía",
+		"description": "Sandía dulce y refrescante.",
+		"code": "A124",
+		"price": 3.99,
+		"status": true,
+		"thumbnails": "/img/imagen_sandia.webp",
+		"category": "Frutas",
+		"stock": 50
+	}
+
+// [x]
+### PUT actualiza los productos
+PUT http://localhost:8080/api/products/654266f80c4f1593d852d1fb
+Content-Type: application/json
+
+{
+"code": "A1323",
+"stock":555
+}
+
+// [x]
+### DELETE Elimima el producto
+DELETE  http://localhost:8080/api/products/6542e49e3aaeaff59fd1f93e
+

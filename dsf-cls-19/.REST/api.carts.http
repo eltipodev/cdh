@@ -1,0 +1,45 @@
+// [x]
+### GET Listar todos Carros
+GET  http://localhost:8080/api/carts
+
+// [x]
+### GET Listar Carros por id
+GET  http://localhost:8080/api/carts/65426c5f4b5face80e96732c
+
+
+// [x]
+### POST agrega carritos
+POST http://localhost:8080/api/carts
+# Content-Type: application/json
+
+
+// [x]
+### POST agrega producto a un carrito
+POST http://localhost:8080/api/carts/6542ebee3aaeaff59fd1f9f1/products/6542e3043aaeaff59fd1f8f1
+# Content-Type: application/json
+
+
+// [x]
+### DELETE eliminar  producto de un carrito
+DELETE http://localhost:8080/api/carts/65426c614b5face80e967334/products/654266f80c4f1593d852d1fa
+# Content-Type: application/json
+
+// [x]
+### DELETE eliminar todos los productos del  carrito
+DELETE http://localhost:8080/api/carts/6542c26edffd9d4b24c4892e
+# Content-Type: application/json
+
+
+// [x]
+### PUT  actualizar el carrito con un arreglo
+PUT http://localhost:8080/api/carts/65426c614b5face80e967334
+Content-Type: application/json
+
+["654266f80c4f1593d852d1ff","654266f80c4f1593d852d201","654266f80c4f1593d852d200","654266f80c4f1593d852d202","654266f80c4f1593d852d1fd"]
+
+// [x]
+### PUT actualizar el carrito con un arreglo
+PUT http://localhost:8080/api/carts/65426c614b5face80e967334/products/654266f80c4f1593d852d202
+Content-Type: application/json
+
+{"quantity":6644}

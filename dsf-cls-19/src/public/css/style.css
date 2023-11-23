@@ -1,0 +1,102 @@
+/* CSS RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	font-family: TitanOne-Regular, Courier, monospace;
+	-webkit-font-smoothing: antialiased;
+	height: 100vh;
+	line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+	text-align: center;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+#root, #__next {
+	isolation: isolate;
+}
+
+/* FIN RESET */
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+body{
+	background-color: rgb(45 44 44);
+	color:rgb(198 198 198);
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+a{
+	color:rgb(143 215 215)
+}
+
+
+
+.error-ctn{
+	display: grid;
+	place-content: center;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.guia-title-product{
+	background-color: #817f7f;
+	border-radius: 5px;
+	color: rgb(206 206 206);
+	display: inline-block;
+	padding: 0 2px;
+	text-align: left;}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.guia-subTitle-product{	text-align: left}
+
+ol{
+	margin:12px 0;
+}
+
+.page-subtitle{
+	color: rgb(255 205 240);
+	font-size: 12px;
+}
+
+
+.page-title{
+	line-height: 1;
+}
+
+.site-footer{
+	background-color: rgb(25 25 25);
+	padding: 5px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.site-main{
+	align-items: center;
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	justify-content: start
+}

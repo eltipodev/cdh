@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/card.css">
+	<link rel="stylesheet" href="/css/product.css">
+	<link rel="stylesheet" href="/css/nav.css">
+	<link rel="stylesheet" href="/css/select-option-carts.css">
+	<link rel="stylesheet" href="/css/paginate.css">
+	<link rel="stylesheet" href="/css/guia.css">
+	<link rel="stylesheet" href="/css/form-user-signup.css">
+	<link rel="stylesheet" href="/css/profile.css">
+	<title>{{{pageTitle}}}</title>
+</head>
+
+<body>
+	{{#if (eq pageTitle "Signup")}}
+	{{else}}
+	{{#if (eq pageTitle "Login")}}
+	{{else}}
+	{{>nav}}
+	{{#if user.user}}
+	{{else}}
+	{{/if}}
+	<h2>{{message}}</h2>
+	{{#if (eq pageTitle "Profile")}}
+	{{else}}
+	{{#if (eq pageTitle "Productos")}}
+	{{>nav-filter}}
+	{{else}}
+	{{/if}}
+	{{/if}}
+	{{/if}}
+	{{/if}}
+	<main class="site-main">
+		{{{body}}}
+	</main>
+	{{#if (eq pageTitle "Signup")}}
+	{{else}}
+	{{#if (eq pageTitle "Login")}}
+	{{else}}
+	{{#if (eq pageTitle "Login")}}
+	{{else}}
+	{{#if (eq pageTitle undefined)}}
+	{{else}}
+	{{>paginate}}
+	{{/if}}
+	{{/if}}
+	{{/if}}
+	{{/if}}
+	{{>footer}}
+	<script type="module" src="/js/index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
